@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class='middle'>
+            <h1 id='texthere'>TEXT WILL BE HERE</h1>
+            <input type="text" id="input1" />
+            <button onclick="myJsFunction()">CLICK</button>
+        </div>
+        <script type="text/javascript">
+            
+            
+            function myJsFunction(){
+                var text=document.getElementById('input1').value.toLowerCase();
+                output = text.split("").join(" ");
+                
+                // Converting each letter. [RECURSIVE]
+                output = output.replace(/a/g, "ayy") + " ";
+                output = output.replace(/b/g, "bee") + " ";
+                output = output.replace(/c/g, "see") + " ";
+                output = output.replace(/d/g, "dee") + " ";
+                output = output.replace(/e/g, "eee") + " ";
+                output = output.replace(/f/g, "eff") + " ";
+                output = output.replace(/g/g, "gee") + " ";
+                output = output.replace(/h/g, "ach") + " ";
+                output = output.replace(/i/g, "eye") + " ";
+                output = output.replace(/j/g, "jay") + " ";
+                output = output.replace(/k/g, "kay") + " ";
+                output = output.replace(/l/g, "ell") + " ";
+                output = output.replace(/n/g, "enn") + " ";
+                output = output.replace(/m/g, "emm") + " ";
+                output = output.replace(/o/g, "ohh") + " ";
+                output = output.replace(/p/g, "pee") + " ";
+                output = output.replace(/q/g, "que") + " ";
+                output = output.replace(/r/g, "arr") + " ";
+                output = output.replace(/s/g, "ess") + " ";
+                output = output.replace(/t/g, "tee") + " ";
+                output = output.replace(/u/g, "you") + " ";
+                output = output.replace(/v/g, "vee") + " ";
+                output = output.replace(/w/g, "doubleu") + " ";
+                output = output.replace(/x/g, "exx") + " ";
+                output = output.replace(/y/g, "why") + " ";
+                output = output.replace(/b/g, "zee") + " ";
+                
+                document.getElementById('texthere').innerHTML = output;
+            }
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
