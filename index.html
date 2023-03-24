@@ -13,35 +13,39 @@
             
             function myJsFunction(){
                 var text=document.getElementById('input1').innerText.toLowerCase();
-                output = text.split("").join(" ");
+                chars = [text.length]
+                for (var i = 0; i < text.length; i++) {
+                    chars[i] = text.charAt(i)
+                }
                 
+                output = chars.join(" ")
                 // Converting each letter. [RECURSIVE]
-                output = output.replace(/a/g, "ayy") + " ";
-                output = output.replace(/b/g, "bee") + " ";
-                output = output.replace(/c/g, "see") + " ";
-                output = output.replace(/d/g, "dee") + " ";
-                output = output.replace(/e/g, "eee") + " ";
-                output = output.replace(/f/g, "eff") + " ";
-                output = output.replace(/g/g, "gee") + " ";
-                output = output.replace(/h/g, "ach") + " ";
-                output = output.replace(/i/g, "eye") + " ";
-                output = output.replace(/j/g, "jay") + " ";
-                output = output.replace(/k/g, "kay") + " ";
-                output = output.replace(/l/g, "ell") + " ";
-                output = output.replace(/n/g, "enn") + " ";
-                output = output.replace(/m/g, "emm") + " ";
-                output = output.replace(/o/g, "ohh") + " ";
-                output = output.replace(/p/g, "pee") + " ";
-                output = output.replace(/q/g, "que") + " ";
-                output = output.replace(/r/g, "arr") + " ";
-                output = output.replace(/s/g, "ess") + " ";
-                output = output.replace(/t/g, "tee") + " ";
-                output = output.replace(/u/g, "you") + " ";
-                output = output.replace(/v/g, "vee") + " ";
-                output = output.replace(/w/g, "u&u") + " ";
-                output = output.replace(/x/g, "exx") + " ";
-                output = output.replace(/y/g, "why") + " ";
-                output = output.replace(/b/g, "zee") + " ";
+                output = output.replace("\ba\b", "ayy") + " ";
+                output = output.replace("\bb\b", "bee") + " ";
+                output = output.replace("\bc\b", "see") + " ";
+                output = output.replace("\bd\b", "dee") + " ";
+                output = output.replace("\be\b", "eee") + " ";
+                output = output.replace("\bf\b", "eff") + " ";
+                output = output.replace("\bg\b", "gee") + " ";
+                output = output.replace("\bh\b", "ach") + " ";
+                output = output.replace("\bi\b", "eye") + " ";
+                output = output.replace("\bj\b", "jay") + " ";
+                output = output.replace("\bk\b", "kay") + " ";
+                output = output.replace("\bl\b", "ell") + " ";
+                output = output.replace("\bm\b", "enn") + " ";
+                output = output.replace("\bn\b", "emm") + " ";
+                output = output.replace("\bo\b", "ohh") + " ";
+                output = output.replace("\bp\b", "pee") + " ";
+                output = output.replace("\bq\b", "que") + " ";
+                output = output.replace("\br\b", "arr") + " ";
+                output = output.replace("\bs\b", "ess") + " ";
+                output = output.replace("\bt\b", "tee") + " ";
+                output = output.replace("\bu\b", "you") + " ";
+                output = output.replace("\bv\b", "vee") + " ";
+                output = output.replace("\bw\b", "u&u") + " ";
+                output = output.replace("\bx\b", "exx") + " ";
+                output = output.replace("\by\b", "why") + " ";
+                output = output.replace("\bz\b", "zee") + " ";
                 
                 document.getElementById('texthere').innerHTML = output;
             }
